@@ -9,6 +9,7 @@ class Program
 {
     static void Main()
     {
+        Welcome();
         while (true)
         {
             Console.Write("> ");
@@ -20,6 +21,10 @@ class Program
             {
                 case "cd":
                     ChangeDirectory(input);
+                    break;
+
+                case "help":
+                    help();
                     break;
 
                 case "ls":
@@ -36,9 +41,23 @@ class Program
         }
     }
 
-
+    
     static void Welcome()
-    { Console.WriteLine("welcome to the c# version of the PythonicOS shell!")}
+    { Console.WriteLine("welcome to the c# version of the PythonicOS shell!");
+        Console.WriteLine("to get started just type help and then press enter!");
+    
+    }
+    static void help()
+    {
+        Console.WriteLine("cd: changes directory");
+        Console.WriteLine("ls: list files in directory");
+        //Console.WriteLine("exit: exits the shell!");
+        //Console.WriteLine("cd: changes directory");
+        //Console.WriteLine("cd: changes directory");
+        //Console.WriteLine("cd: changes directory");
+        //Console.WriteLine("cd: changes directory");
+
+    }
 
     static void ChangeDirectory(string input)
     {
