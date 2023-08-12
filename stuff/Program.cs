@@ -7,9 +7,10 @@ using System.IO;
 
 class Program
 {
-    static void Main()
+    string? namez = "OpenStudioIDE shell";
+    static void Main(string namez)
     {
-        Welcome();
+        Welcome(namez);
         while (true)
         {
             Console.Write("> ");
@@ -42,10 +43,32 @@ class Program
     }
 
     
-    static void Welcome()
-    { Console.WriteLine("welcome to the c# version of the PythonicOS shell!");
+    static void Welcome(string namez)
+    { Console.WriteLine($"welcome to the {namez}");
         Console.WriteLine("to get started just type help and then press enter!");
     
+    }
+    static void what()
+    {
+        Console.WriteLine("you might be wondering why an OpenSourceIDE has a custom shell?\n");
+        Console.WriteLine("we wanted to make it feel close to the IDE's your fimalar with\n");
+        Console.WriteLine("like visual studio\n");
+        Console.WriteLine("or jetbrains rider\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
+        Console.WriteLine("\n");
     }
     static void help()
     {
