@@ -7,10 +7,11 @@ using System.IO;
 
 class Program
 {
-    string? namez = "OpenStudioIDE shell";
-    static void Main(string namez)
+    
+    static void Main()
+    
     {
-        Welcome(namez);
+        Welcome();
         while (true)
         {
             Console.Write("> ");
@@ -31,6 +32,9 @@ class Program
                 case "ls":
                     ListDirectory(input);
                     break;
+                case "what":
+                    what();
+                    break;
 
                 case "exit":
                     return;
@@ -43,8 +47,8 @@ class Program
     }
 
     
-    static void Welcome(string namez)
-    { Console.WriteLine($"welcome to the {namez}");
+    static void Welcome()
+    { Console.WriteLine($"welcome to the OpenStudioIDE");
         Console.WriteLine("to get started just type help and then press enter!");
     
     }
@@ -54,28 +58,17 @@ class Program
         Console.WriteLine("we wanted to make it feel close to the IDE's your fimalar with\n");
         Console.WriteLine("like visual studio\n");
         Console.WriteLine("or jetbrains rider\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
-        Console.WriteLine("\n");
+        Console.WriteLine("this shell was passed down between projects\n");
+        Console.WriteLine("it started as the PythonicOS Shell, then became the launcher shell then here we are at the IDE\n");
+        Console.WriteLine("hopefully we dont have to move it again!\n");
+     
     }
     static void help()
     {
         Console.WriteLine("cd: changes directory");
         Console.WriteLine("ls: list files in directory");
         //Console.WriteLine("exit: exits the shell!");
-        //Console.WriteLine("cd: changes directory");
+        //Console.WriteLine("what: it puts things on the screen?");
         //Console.WriteLine("cd: changes directory");
         //Console.WriteLine("cd: changes directory");
         //Console.WriteLine("cd: changes directory");
